@@ -8,4 +8,4 @@
 // test targets.
 //
 
-#include "../External/Base/Configurations/Debug.xcconfig"
+#include "../External/Base/Configurations/Test.xcconfig"
