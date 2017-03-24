@@ -1,0 +1,11 @@
+//
+// Release.xcconfig
+//
+// Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+// Licensed under MIT License.
+//
+// This file contains general build settings used in release build
+// configurations in all kinds of targets.
+//
+
+#include "../External/Base/Configurations/Release.xcconfig"
