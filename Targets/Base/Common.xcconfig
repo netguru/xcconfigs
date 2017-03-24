@@ -53,8 +53,8 @@ _DEPLOYMENT_DEVICES[sdk=appletv*] = 3
 _DEPLOYMENT_DEVICES[sdk=watchos*] = 4
 
 /// Target minimum iOS, macOS, tvOS and watchOS versions of the product.
-_DEPLOYMENT_VERSION[sdk=iphone*] =
 _DEPLOYMENT_VERSION[sdk=macosx*] =
+_DEPLOYMENT_VERSION[sdk=iphone*] =
 _DEPLOYMENT_VERSION[sdk=appletv*] =
 _DEPLOYMENT_VERSION[sdk=watchos*] =
 
@@ -89,8 +89,8 @@ _ASSET_LAUNCHIMAGE =
 ///
 /// This build setting can be used in `carthage copy-frameworks` build phase
 /// when adding paths to the frameworks that have to be copied.
-_CARTHAGE_BUILD_PATH[sdk=iphone*] = $(SRCROOT)/Carthage/Build/iOS
 _CARTHAGE_BUILD_PATH[sdk=macosx*] = $(SRCROOT)/Carthage/Build/Mac
+_CARTHAGE_BUILD_PATH[sdk=iphone*] = $(SRCROOT)/Carthage/Build/iOS
 _CARTHAGE_BUILD_PATH[sdk=appletv*] = $(SRCROOT)/Carthage/Build/tvOS
 _CARTHAGE_BUILD_PATH[sdk=watchos*] = $(SRCROOT)/Carthage/Build/watchOS
 
