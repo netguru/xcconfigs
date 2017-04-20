@@ -1,6 +1,6 @@
 # xcconfigs
 
-![](https://img.shields.io/badge/xcode-8.2-green.svg)
+![](https://img.shields.io/badge/xcode-8.3-green.svg)
 [![](https://img.shields.io/github/release/netguru/xcconfigs.svg)](https://github.com/netguru/xcconfigs/releases)
 [![](https://img.shields.io/github/license/netguru/xcconfigs.svg)](LICENSE.md)
 
@@ -8,7 +8,7 @@ This is a collection of common Xcode build configuration files.
 
 ## Requirements
 
-The latest stable version of `xcconfigs` is compatible with **Xcode 8.2** and **Swift 3.0.2** toolchain.
+The latest stable version of `xcconfigs` is compatible with **Xcode 8.3** and **Swift 3.1** toolchain.
 
 ## Installation
 
