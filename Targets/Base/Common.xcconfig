@@ -24,7 +24,7 @@ _ENVIRONMENT =
 _BUILD_VERSION =
 
 /// The build number, mapped later into `CFBundleVersion` in `Info.plist`.
-_BUILD_NUMBER =
+_BUILD_NUMBER = $(_BUILD_VERSION)
 
 // MARK: Bundle
 
