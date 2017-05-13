@@ -1,0 +1,95 @@
+//
+// Common/Variables.xcconfig
+//
+// Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+// Licensed under MIT License.
+//
+// This file contains variables that are mapped to build settings.
+//
+
+// MARK: Environment
+
+// The environment build setting, typically overridden in environment-specific
+// `xcconfig` files.
+_ENVIRONMENT = DEFAULT
+
+// MARK: Versioning
+
+// The build semantic version, mapped later to `CFBundleVersionString`.
+_BUILD_VERSION = 0
+
+// The build number, mapped later to `CFBundleVersion`.
+_BUILD_NUMBER = $(_BUILD_VERSION)
+
+// MARK: Bundle
+
+// Bundle name of the product, used by Xcode to create an `.app` bundle.
+_BUNDLE_NAME = $(TARGET_NAME)
+
+// Bundle identifier of the product.
+_BUNDLE_IDENTIFIER =
+
+/// Path to `Info.plist` file of the product.
+_BUNDLE_INFOPLIST_PATH =
+
+// Whether the bundle is `@testable`.
+_BUNDLE_TESTABLE = YES
+
+// MARK: Deployment
+
+// Minimum iOS deployment target.
+_DEPLOYMENT_TARGET_IOS = 10.0
+
+// Minimum macOS deployment target.
+_DEPLOYMENT_TARGET_MACOS = 10.12
+
+// Minimum tvOS deployment target.
+_DEPLOYMENT_TARGET_TVOS = 10.0
+
+// Minimum watchOS deployment target.
+_DEPLOYMENT_TARGET_WATCHOS = 3.0
+
+// MARK: Signing
+
+// Development team to be used with `_CODESIGN_PROFILE_SPECIFIER` to manually
+// code sign the product.
+_CODESIGN_DEVELOPMENT_TEAM =
+
+// The identity to be used with `_CODESIGN_PROFILE_SPECIFIER` to manually code
+// sign the product.
+_CODESIGN_IDENTITY =
+
+// The provisioning profile specifier to be used with `_CODESIGN_IDENTITY` to
+// manually code sign the product.
+_CODESIGN_PROFILE_SPECIFIER =
+
+// Path to `.entitlements` file of the product.
+_CODESIGN_ENTITLEMENTS_PATH =
+
+// MARK: Assets
+
+// Name of the icon asset to be used.
+_ASSET_ICON =
+
+// Name of the launch image asset to be used.
+_ASSET_LAUNCHIMAGE =
+
+// MARK: Compiler
+
+// Whether to enable hard mode (a.k.a. treat warnings as errors).
+_COMPILER_HARD_MODE = YES
+
+// The version of Swift to be used by compiler.
+_COMPILER_SWIFT_VERSION = 3.1
+
+// Additional flags for the Swift compiler.
+_COMPILER_SWIFT_FLAGS =
+
+// Additional search paths when looking for frameworks.
+_COMPILER_FRAMEWORK_SEARCH_PATHS =
+
+// Additional search paths when looking for headers.
+_COMPILER_HEADER_SEARCH_PATHS =
+
+// Additional libraries linked by compiler.
+_COMPILER_LINKED_LIBRARIES =

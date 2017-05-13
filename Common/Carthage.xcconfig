@@ -1,0 +1,14 @@
+//
+// Common/Carthage.xcconfig
+//
+// Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+// Licensed under MIT License.
+//
+// This file contains base build settings for targets using Carthage.
+//
+
+// Carthage build path.
+_CARTHAGE_BUILD_PATH[sdk=iphone*] = $(SRCROOT)/Carthage/Build/iOS
+_CARTHAGE_BUILD_PATH[sdk=macosx*] = $(SRCROOT)/Carthage/Build/Mac
+_CARTHAGE_BUILD_PATH[sdk=appletv*] = $(SRCROOT)/Carthage/Build/tvOS
+_CARTHAGE_BUILD_PATH[sdk=watch*] = $(SRCROOT)/Carthage/Build/watchOS
