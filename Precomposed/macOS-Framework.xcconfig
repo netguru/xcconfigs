@@ -1,0 +1,12 @@
+//
+// Precomposed/macOS-Framework.xcconfig
+//
+// Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+// Licensed under MIT License.
+//
+// This file contains precomposed build settings for an macOS framework.
+//
+
+#include "../Sdks/macOS.xcconfig"
+#include "../Platforms/macOS.xcconfig"
+#include "../Targets/Framework.xcconfig"

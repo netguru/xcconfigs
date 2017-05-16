@@ -1,0 +1,12 @@
+//
+// Precomposed/tvOS-Framework.xcconfig
+//
+// Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
+// Licensed under MIT License.
+//
+// This file contains precomposed build settings for an tvOS framework.
+//
+
+#include "../Sdks/tvOS.xcconfig"
+#include "../Platforms/tvOS.xcconfig"
+#include "../Targets/Framework.xcconfig"
