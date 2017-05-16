@@ -4,8 +4,7 @@
 // Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
 // Licensed under MIT License.
 //
-// This file contains build settings specific to application and test bundle
-// targets.
+// This file contains build settings specific to application targets.
 //
 
 // MARK: Linking
