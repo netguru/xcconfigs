@@ -18,7 +18,7 @@ SUPPORTED_PLATFORMS = appletvos appletvsimulator
 // MARK: Deployment
 
 // Deployment target for tvOS.
-TVOS_DEPLOYMENT_TARGET = $(_DEPLOYMENT_VERSION_TVOS)
+TVOS_DEPLOYMENT_TARGET = $(_DEPLOYMENT_TARGET_TVOS)
 
 // Supported device families for tvOS.
 TARGETED_DEVICE_FAMILY = 3
