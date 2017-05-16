@@ -2,7 +2,7 @@
 
 Large-scale apps, especially the ones crated by a team of numerous people and having more than two (debug/release) build configurations, need powerful and flexible way of specifying code signing settings per each target and configuration.
 
-In this document, you'll see a couple of methods to do flexible manual code signing using [netguru/xcconfigs](https://github.com/netguru/xcconfigs).
+In this document you will see a couple of methods to do flexible manual code signing using [netguru/xcconfigs](https://github.com/netguru/xcconfigs).
 
 ---
 
@@ -66,7 +66,7 @@ If you want your unit tests bundle to be code signed (or you have another target
 
 ### Using multiple xcconfig files
 
-The second method is to use multiple `.xcconfig` files for multiple build configuration.
+The second method is to use multiple `.xcconfig` files, one per target per build configuration.
 
 The following example assumes that `.xcconfig` files are assigned as follows:
 
