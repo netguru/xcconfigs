@@ -16,7 +16,7 @@ _ENVIRONMENT = DEFAULT
 // MARK: Versioning
 
 // The build semantic version, mapped later to `CFBundleVersionString`.
-_BUILD_VERSION = 0
+_BUILD_VERSION =
 
 // The build number, mapped later to `CFBundleVersion`.
 _BUILD_NUMBER = $(_BUILD_VERSION)
@@ -38,16 +38,16 @@ _BUNDLE_TESTABLE = YES
 // MARK: Deployment
 
 // Minimum iOS deployment target.
-_DEPLOYMENT_TARGET_IOS = 10.0
+_DEPLOYMENT_TARGET_IOS =
 
 // Minimum macOS deployment target.
-_DEPLOYMENT_TARGET_MACOS = 10.12
+_DEPLOYMENT_TARGET_MACOS =
 
 // Minimum tvOS deployment target.
-_DEPLOYMENT_TARGET_TVOS = 10.0
+_DEPLOYMENT_TARGET_TVOS =
 
 // Minimum watchOS deployment target.
-_DEPLOYMENT_TARGET_WATCHOS = 3.0
+_DEPLOYMENT_TARGET_WATCHOS =
 
 // MARK: Signing
 
