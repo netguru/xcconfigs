@@ -8,7 +8,11 @@ This is a collection of common Xcode build configuration files.
 
 ## Requirements
 
-The latest stable version of `xcconfigs` is compatible with **Xcode 8.3** and **Swift 3.1** toolchain.
+The latest stable version of `xcconfigs` is compatible with **Xcode 8.3**.
+
+## Documentation
+
+Documentation, tutorials and how-to's are available in [Documentation](Documentation) folder.
 
 ## Installation
 
