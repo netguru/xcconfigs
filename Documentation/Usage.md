@@ -149,3 +149,9 @@ This is the final step.
 Select the project file in Navigator panel, go to project's General tab and assign appropriate xcconfig files in the Configurations section:
 
 ![](Images/usage-assign-project-configurations.gif)
+
+### 6. Build the project!
+
+Everything should be configured properly by now. Test the configuration bu building the project. If it builds without errors, all is good!
+
+![](Images/usage-build.gif)
