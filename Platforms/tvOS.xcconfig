@@ -10,7 +10,7 @@
 // MARK: Architecture
 
 // SDK root of tvOS.
-SDKROOT = appletv
+SDKROOT = appletvos
 
 // Supported platforms for tvOS.
 SUPPORTED_PLATFORMS = appletvos appletvsimulator
