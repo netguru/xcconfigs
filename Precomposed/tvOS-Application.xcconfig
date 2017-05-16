@@ -7,6 +7,5 @@
 // This file contains precomposed build settings for an macOS application.
 //
 
-#include "../Sdks/tvOS.xcconfig"
 #include "../Platforms/tvOS.xcconfig"
 #include "../Targets/Application.xcconfig"

@@ -7,10 +7,13 @@
 // This file contains build settings specific to watchOS platform.
 //
 
-// MARK: Platform
+// MARK: Architecture
+
+// SDK root of tvOS.
+SDKROOT = watchos
 
 // Supported platforms for watchOS.
-_PLATFORM_WATCHOS = watchos watchsimulator
+SUPPORTED_PLATFORMS = watchos watchsimulator
 
 // MARK: Deployment
 
@@ -18,9 +21,9 @@ _PLATFORM_WATCHOS = watchos watchsimulator
 WATCHOS_DEPLOYMENT_TARGET = $(_DEPLOYMENT_TARGET_WATCHOS)
 
 // Supported device families for watchOS.
-TARGETED_DEVICE_FAMILY[sdk=watch*] = 4
+TARGETED_DEVICE_FAMILY = 4
 
 // MARK: Linker
 
 // Where to find embedded frameworks for watchOS.
-LD_RUNPATH_SEARCH_PATHS[sdk=watch*] = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks

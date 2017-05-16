@@ -7,6 +7,5 @@
 // This file contains precomposed build settings for an watchOS application.
 //
 
-#include "../Sdks/watchOS.xcconfig"
 #include "../Platforms/watchOS.xcconfig"
 #include "../Targets/Application.xcconfig"

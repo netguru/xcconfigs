@@ -7,6 +7,5 @@
 // This file contains precomposed build settings for an macOS framework.
 //
 
-#include "../Sdks/macOS.xcconfig"
 #include "../Platforms/macOS.xcconfig"
 #include "../Targets/Framework.xcconfig"

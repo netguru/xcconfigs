@@ -7,6 +7,5 @@
 // This file contains precomposed build settings for an iOS framework.
 //
 
-#include "../Sdks/iOS.xcconfig"
 #include "../Platforms/iOS.xcconfig"
 #include "../Targets/Framework.xcconfig"

@@ -7,10 +7,13 @@
 // This file contains build settings specific to tvOS platform.
 //
 
-// MARK: Platform
+// MARK: Architecture
+
+// SDK root of tvOS.
+SDKROOT = appletv
 
 // Supported platforms for tvOS.
-_PLATFORM_TVOS = appletvos appletvsimulator
+SUPPORTED_PLATFORMS = appletvos appletvsimulator
 
 // MARK: Deployment
 
@@ -18,9 +21,9 @@ _PLATFORM_TVOS = appletvos appletvsimulator
 TVOS_DEPLOYMENT_TARGET = $(_DEPLOYMENT_VERSION_TVOS)
 
 // Supported device families for tvOS.
-TARGETED_DEVICE_FAMILY[sdk=appletv*] = 3
+TARGETED_DEVICE_FAMILY = 3
 
 // MARK: Linker
 
 // Where to find embedded frameworks for tvOS.
-LD_RUNPATH_SEARCH_PATHS[sdk=appletv*] = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks

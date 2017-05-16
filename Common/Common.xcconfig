@@ -10,11 +10,6 @@
 // Include default values of variables.
 #include "Variables.xcconfig"
 
-// MARK: Architecture
-
-// Supported platforms, combined from private `_PLATFORM_*` variables.
-SUPPORTED_PLATFORMS = $(_PLATFORM_IOS) $(_PLATFORM_MACOS) $(_PLATFORM_TVOS) $(_PLATFORM_WATCHOS)
-
 // MARK: Build options
 
 // The format of debugging symbols.

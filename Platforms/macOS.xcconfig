@@ -7,10 +7,13 @@
 // This file contains build settings specific to macOS platform.
 //
 
-// MARK: Platform
+// MARK: Architecture
+
+// SDK root of macOS.
+SDKROOT = macosx
 
 // Supported platforms for macOS.
-_PLATFORM_MACOS = macosx
+SUPPORTED_PLATFORMS = macosx
 
 // MARK: Deployment
 
@@ -25,4 +28,4 @@ COMBINE_HIDPI_IMAGES = YES
 // MARK: Linker
 
 // Where to find embedded frameworks for macOS.
-LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
