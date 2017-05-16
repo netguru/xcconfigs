@@ -1,6 +1,6 @@
 # xcconfigs – Usage
 
-This document contains information on how to use `xcconfigs`.
+This document describes usage of `xcconfigs`.
 
 ---
 
