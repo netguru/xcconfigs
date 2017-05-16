@@ -2,7 +2,7 @@
 
 Large-scale apps, especially the ones crated by a team of numerous people and having more than two (debug/release) build configurations, need powerful and flexible way of specifying code signing settings per each target and configuration.
 
-In this document, you'll be presented by a couple of possibilities to do flexible manual code signing using [netguru/xcconfigs](https://github.com/netguru/xcconfigs).
+In this document, you'll see a couple of methods to do flexible manual code signing using [netguru/xcconfigs](https://github.com/netguru/xcconfigs).
 
 ---
 
@@ -84,7 +84,7 @@ Release - Release.xcconfig
  └ Tests - Tests-Release.xcconfig
 ```
 
-In such case, you can directly set `_CODESIGN_*` build settings in specific `.xcconfig` files:
+In such case, you can directly set `_CODESIGN_*` build settings in `Application-Staging.xcconfig` and `Application-Release.xcconfig` files:
 
 >**Application-Staging.xcconfig**
 
@@ -102,6 +102,6 @@ _CODESIGN_IDENTITY = Jane Roe (F6E5D4C3B2A1)
 _CODESIGN_PROFILE_SPECIFIER = MyProject Release
 ```
 
-Like after the first method, `Application-Development.xcconfig` does not set `_CODESIGN_*` build settings and, as neither does `Tests-*.xcconfig`, unit tests bundle remains not code signed.
+Like after the first method, `Application-Development.xcconfig` does not set `_CODESIGN_*` build settings and, as neither do `Tests-*.xcconfig` files, unit tests bundle remains not code signed.
 
 Using this method, as opposed to the first method, does get rid of custom build setting variables. However, it requires 9, instead of 5 `.xcconfig` files to be created. It is up to you and your team mates to decide which method suits you better.
