@@ -6,7 +6,7 @@ In this document you will see a couple of methods to do flexible manual code sig
 
 ---
 
-### Using custom build setting variables
+### Method 1: Using custom build setting variables
 
 The first method is to map `_CODESIGN_*` build settings to custom build setting variables declared in configuration `.xcconfig` files.
 
@@ -64,7 +64,7 @@ If you want your unit tests bundle to be code signed (or you have another target
 
 ---
 
-### Using multiple xcconfig files
+### Method 2: Using multiple xcconfig files
 
 The second method is to use multiple `.xcconfig` files, one per target per build configuration.
 
