@@ -75,7 +75,23 @@ _Rationale: Build settings with no underscores are "real build settings" used by
 
 ### Use variables provided by [netguru/xcconfigs](https://github.com/netguru/xcconfigs) instead of real build settings
 
-TBD
+In case you need to customize build settings, prefer to override [variables](Variables.md) provided by [netguru/xcconfigs](https://github.com/netguru/xcconfigs).
+
+Additionally, try to inherit defult build settings by putting `$(inherited)` as a value of build setting that support inheritance.
+
+In other words, **prefer this**:
+
+```none
+_COMPILER_FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/Custom/Path/To/Frameworks
+```
+
+Instead of this:
+
+```none
+FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/Custom/Path/To/Frameworks
+```
+
+_Rationale: [netguru/xcconfigs](https://github.com/netguru/xcconfigs) uses some reasonable default values for many build settings and some of them are even composed out of many variables._
 
 ---
 
@@ -83,8 +99,8 @@ TBD
 
 [netguru/xcconfigs](https://github.com/netguru/xcconfigs) are here to help you, not interfere with or disable your work.
 
-If Xcode throws strange errors during compilation (or runtime), you suspect it's caused by using this project and you don't know how to fix it, let Xcode win (either by using build settings in `*.xcodeproj` file or getting rid of `*.xcconfig` files at all).
+If Xcode throws strange errors during compilation (or runtime), you suspect it's caused by using this project and you don't know how to fix it, let Xcode win (by using build settings in `*.xcodeproj` file or getting rid of `*.xcconfig` files at all).
 
-In addition, in case of problems, you are encouraged to [open an issue](https://github.com/netguru/xcconfigs/issues/new) so that our maintainers can help you in any way they can.
+In addition, in case of problems, you are encouraged to [open an issue](https://github.com/netguru/xcconfigs/issues/new) so that our maintainers can help you.
 
 _Rationale: You don't want to fight your IDE._
