@@ -12,9 +12,7 @@ Please note that variables with similar purpose are grouped by a common prefix.
 
 #### `_ENVIRONMENT`
 
-This variable contains the name of environment that you use in schemes.
-
-As this variable is mapped to compilation conditions, you may use it to write conditionally compiled code.
+Name of the environment. As this variable is mapped to compilation conditions, you may use it to write conditionally compiled code.
 
 Assuming you have a follofing `*.xcconfig` file:
 
@@ -42,17 +40,19 @@ You can use this in both Swift and Objective-C code:
 #endif
 ```
 
+Please note that when `_ENVIRONMENT` is mapped to a compilation condition, an `ENV_` prefix is applies so that the setting does not interfere with preexisting compilation conditions.
+
 ---
 
 ### Versioning
 
 #### `_BUILD_VERSION`
 
-TBD
+Semantic version of the product or the whole project.
 
 #### `_BUILD_NUMBER`
 
-TBD
+Build number of the product or the whole project.
 
 ---
 
@@ -60,19 +60,19 @@ TBD
 
 #### `_BUNDLE_NAME`
 
-TBD
+Name of the product bundle.
 
 #### `_BUNDLE_IDENTIFIER`
 
-TBD
+Identifier of the product bundle. This variable is used as `CFBundleIdentifier` in Info.plist.
 
 #### `_BUNDLE_INFOPLIST_PATH`
 
-TBD
+Path to Info.plist file of the product bundle.
 
 #### `_BUNDLE_TESTABLE`
 
-TBD
+Whether the product bundle is testable.
 
 ---
 
@@ -80,19 +80,19 @@ TBD
 
 #### `_DEPLOYMENT_TARGET_IOS`
 
-TBD
+Minimum deployment target of the product on iOS.
 
 #### `_DEPLOYMENT_TARGET_MACOS`
 
-TBD
+Minimum deployment target of the product on macOS.
 
 #### `_DEPLOYMENT_TARGET_TVOS`
 
-TBD
+Minimum deployment target of the product on tvOS.
 
 #### `_DEPLOYMENT_TARGET_WATCHOS`
 
-TBD
+Minimum deployment target of the product on watchOS.
 
 ---
 
@@ -100,19 +100,19 @@ TBD
 
 #### `_CODESIGN_DEVELOPMENT_TEAM`
 
-TBD
+Development team used along with `_CODESIGN_IDENTITY` and `_CODESIGN_PROFILE_SPECIFIER` to manually code sign the product.
 
 #### `_CODESIGN_IDENTITY`
 
-TBD
+Identity used along with `_CODESIGN_DEVELOPMENT_TEAM` and `_CODESIGN_PROFILE_SPECIFIER` to manually code sign the product.
 
 #### `_CODESIGN_PROFILE_SPECIFIER`
 
-TBD
+Provisioning profile specifier used along with `_CODESIGN_DEVELOPMENT_TEAM` and `_CODESIGN_IDENTITY` to manually code sign the product.
 
 #### `_CODESIGN_ENTITLEMENTS_PATH`
 
-TBD
+Path to `*.entitlements` file containing sandboxed capabilities of the product.
 
 ---
 
@@ -120,11 +120,11 @@ TBD
 
 #### `_ASSET_ICON`
 
-TBD
+Name of an asset that will be used as product application's icon.
 
 #### `_ASSET_LAUNCHIMAGE`
 
-TBD
+Name of an asset that will be used as product application's launch image.
 
 ---
 
@@ -132,24 +132,24 @@ TBD
 
 #### `_COMPILER_HARD_MODE`
 
-TBD
+Whether to enable hard mode in Objective-C and Swift compilers. :trollface:
 
 #### `_COMPILER_SWIFT_VERSION`
 
-TBD
+Swift language version used by the product.
 
 #### `_COMPILER_SWIFT_FLAGS`
 
-TBD
+Additional flags passed to Swift compiler.
 
 #### `_COMPILER_FRAMEWORK_SEARCH_PATHS`
 
-TBD
+Framework search paths of Objective-C and Swift compilers.
 
 #### `_COMPILER_HEADER_SEARCH_PATHS`
 
-TBD
+Header search paths of Objective-C compiler.
 
 #### `_COMPILER_LINKED_LIBRARIES`
 
-TBD
+Additionally linked libraries by Objective-C compiler.
