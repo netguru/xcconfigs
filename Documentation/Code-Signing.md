@@ -28,9 +28,9 @@ Release - Release.xcconfig
 
 In `Application.xcconfig` and `Tests.xcconfig` map `_CODESIGN_*` build settings to custom build settings variables that we will use in the next step:
 
->**Application.xcconfig**
-
 ```none
+// Application.xcconfig
+
 _CODESIGN_DEVELOPMENT_TEAM = $(__APPLICATION_CODESIGN_DEVELOPMENT_TEAM)
 _CODESIGN_IDENTITY = $(__APPLICATION_CODESIGN_IDENTITY)
 _CODESIGN_PROFILE_SPECIFIER = $(__APPLICATION_CODESIGN_PROFILE_SPECIFIER)
@@ -38,17 +38,17 @@ _CODESIGN_PROFILE_SPECIFIER = $(__APPLICATION_CODESIGN_PROFILE_SPECIFIER)
 
 Then, in `Development.xcconfig`, `Staging.xcconfig` and `Release.xcconfig` set values of previously mentioned custom build setting variables:
 
->**Staging.xcconfig**
-
 ```none
+// Staging.xcconfig
+
 __APPLICATION_CODESIGN_DEVELOPMENT_TEAM = A1B2C3D4E5F6
 __APPLICATION_CODESIGN_IDENTITY = John Doe (A1B2C3D4E5F6)
 __APPLICATION_CODESIGN_PROFILE_SPECIFIER = MyProject Staging
 ```
 
->**Release.xcconfig**
-
 ```none
+// Release.xcconfig
+
 __APPLICATION_CODESIGN_DEVELOPMENT_TEAM = F6E5D4C3B2A1
 __APPLICATION_CODESIGN_IDENTITY = Jane Roe (F6E5D4C3B2A1)
 __APPLICATION_CODESIGN_PROFILE_SPECIFIER = MyProject Release
@@ -86,17 +86,17 @@ Release - Release.xcconfig
 
 In such case, you can directly set `_CODESIGN_*` build settings in `Application-Staging.xcconfig` and `Application-Release.xcconfig` files:
 
->**Application-Staging.xcconfig**
-
 ```none
+// Application-Staging.xcconfig
+
 _CODESIGN_DEVELOPMENT_TEAM = A1B2C3D4E5F6
 _CODESIGN_IDENTITY = John Doe (A1B2C3D4E5F6)
 _CODESIGN_PROFILE_SPECIFIER = MyProject Staging
 ```
 
->**Application-Release.xcconfig**
-
 ```none
+// Application-Release.xcconfig
+
 _CODESIGN_DEVELOPMENT_TEAM = F6E5D4C3B2A1
 _CODESIGN_IDENTITY = Jane Roe (F6E5D4C3B2A1)
 _CODESIGN_PROFILE_SPECIFIER = MyProject Release
