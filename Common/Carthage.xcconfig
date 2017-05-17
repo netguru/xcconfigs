@@ -7,8 +7,11 @@
 // This file contains base build settings for targets using Carthage.
 //
 
-// Carthage build path.
-_CARTHAGE_BUILD_PATH[sdk=iphone*] = $(SRCROOT)/Carthage/Build/iOS
-_CARTHAGE_BUILD_PATH[sdk=macosx*] = $(SRCROOT)/Carthage/Build/Mac
-_CARTHAGE_BUILD_PATH[sdk=appletv*] = $(SRCROOT)/Carthage/Build/tvOS
-_CARTHAGE_BUILD_PATH[sdk=watch*] = $(SRCROOT)/Carthage/Build/watchOS
+// Path to top-level Carthage directory.
+_CARTHAGE_PATH = $(SRCROOT)/Carthage
+
+// Path to platform-specific Carthage/Build directory.
+_CARTHAGE_BUILD_PATH[sdk=iphone*] = $(_CARTHAGE_PATH)/Build/iOS
+_CARTHAGE_BUILD_PATH[sdk=macosx*] = $(_CARTHAGE_PATH)/Build/Mac
+_CARTHAGE_BUILD_PATH[sdk=appletv*] = $(_CARTHAGE_PATH)/Build/tvOS
+_CARTHAGE_BUILD_PATH[sdk=watch*] = $(_CARTHAGE_PATH)/Build/watchOS
