@@ -4,8 +4,6 @@
 
 This document describes all public variables that you can override in your own `.xcconfig` files.
 
-Please note that variables with similar purpose are grouped by a common prefix.
-
 ---
 
 ### Environment
@@ -54,6 +52,8 @@ Semantic version of the product or the whole project.
 
 Build number of the product or the whole project.
 
+This build setting is particularly useful on a CI service. For example, assuming you use [Travis CI](https://travis-ci.com), you can directly set `_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER` build setting when invoking `xcodebuild`.
+
 ---
 
 ### Bundle
@@ -62,9 +62,13 @@ Build number of the product or the whole project.
 
 Name of the product bundle.
 
+This is different from Target Name, in that it is used as a name of the executable. This means it has more restrictions when it comes to allowed characters – for example, Framework targets might be called `MyFramework (iOS)`, but, as `_BUNDLE_NAME` doesn't allow spaces, it has to be changed to just `MyFramework` or `MyFramework_iOS`.
+
 #### `_BUNDLE_IDENTIFIER`
 
-Identifier of the product bundle. This variable is used as `CFBundleIdentifier` in Info.plist.
+Identifier of the product bundle.
+
+This variable is used as `CFBundleIdentifier` in Info.plist.
 
 #### `_BUNDLE_INFOPLIST_PATH`
 
@@ -72,7 +76,7 @@ Path to Info.plist file of the product bundle.
 
 #### `_BUNDLE_TESTABLE`
 
-Whether the product bundle is testable.
+Whether the product bundle is `@testable`.
 
 ---
 
@@ -134,6 +138,8 @@ Name of an asset that will be used as product application's launch image.
 
 Whether to enable hard mode in Objective-C and Swift compilers. :trollface:
 
+Hard mode enables "Treat warnings as errors" for both Objective-C and Swift. It should be on by default, however, you could opt-out of it in case you're dealing with a legacy project with lots of low-severity warnings.
+
 #### `_COMPILER_SWIFT_VERSION`
 
 Swift language version used by the product.
@@ -141,6 +147,8 @@ Swift language version used by the product.
 #### `_COMPILER_SWIFT_FLAGS`
 
 Additional flags passed to Swift compiler.
+
+Of of the most useful flags you can take advantage in debug configurations is `-Xfrontend -debug-time-function-bodies` which will print how much time Swift compiler spent on compiling particular function (or computed property). This is very, very useful for debugging long compile times.
 
 #### `_COMPILER_FRAMEWORK_SEARCH_PATHS`
 
