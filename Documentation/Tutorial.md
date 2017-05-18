@@ -135,7 +135,7 @@ After the change, the `Info.plist` should look like in the below screenshot:
 
 ![](Images/usage-update-info-plist.gif)
 
-### Step 6: Assign configurations in xcodeproj
+### Step 6: Assign configurations in \*.xcodeproj file
 
 This is the final step.
 
