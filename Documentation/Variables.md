@@ -68,11 +68,11 @@ This is different from Target Name, in that it is used as a name of the executab
 
 Identifier of the product bundle.
 
-This variable is used as `CFBundleIdentifier` in Info.plist.
+This variable is used as `CFBundleIdentifier` in `Info.plist`.
 
 #### `_BUNDLE_INFOPLIST_PATH`
 
-Path to Info.plist file of the product bundle.
+Path to `Info.plist` file of the product bundle.
 
 #### `_BUNDLE_TESTABLE`
 
