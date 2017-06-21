@@ -33,6 +33,16 @@ git submodule add https://github.com/netguru/xcconfigs.git {path}
 git submodule update --init --recursive
 ```
 
+## Roadmap
+
+#### Version 0.3
+
+The main focus of this release will be fixing issues encountered when integrating version 0.2. Also, more documentation and examples are planned to be added as well.
+
+#### Version 0.4
+
+This release will focus on compatibility with Xcode 9 and Swift 4.
+
 ## About
 
 This project is made and maintained with <3 by [Netguru](https://netguru.co).
