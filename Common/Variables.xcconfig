@@ -80,7 +80,7 @@ _ASSET_LAUNCHIMAGE =
 _COMPILER_HARD_MODE = YES
 
 // The version of Swift to be used by compiler.
-_COMPILER_SWIFT_VERSION = 3.1
+_COMPILER_SWIFT_VERSION =
 
 // Additional flags for the Swift compiler.
 _COMPILER_SWIFT_FLAGS =
