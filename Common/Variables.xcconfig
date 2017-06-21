@@ -85,11 +85,14 @@ _COMPILER_SWIFT_VERSION =
 // Additional flags for the Swift compiler.
 _COMPILER_SWIFT_FLAGS =
 
-// Additional search paths when looking for frameworks.
-_COMPILER_FRAMEWORK_SEARCH_PATHS =
+// Path to Swift bridging header to be used by compiler.
+_COMPILER_SWIFT_BRIDGING_HEADER_PATH =
+
+// Additional flags for Objective-C linker.
+_COMPILER_OBJC_LINKER_FLAGS =
 
 // Additional search paths when looking for headers.
-_COMPILER_HEADER_SEARCH_PATHS =
+_COMPILER_OBJC_HEADER_SEARCH_PATHS =
 
-// Additional libraries linked by compiler.
-_COMPILER_LINKED_LIBRARIES =
+// Additional search paths when looking for frameworks.
+_COMPILER_FRAMEWORK_SEARCH_PATHS =

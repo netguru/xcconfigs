@@ -150,14 +150,20 @@ Additional flags passed to Swift compiler.
 
 Of of the most useful flags you can take advantage in debug configurations is `-Xfrontend -debug-time-function-bodies` which will print how much time Swift compiler spent on compiling particular function (or computed property). This is very, very useful for debugging long compile times.
 
+#### `_COMPILER_SWIFT_BRIDGING_HEADER_PATH`
+
+Path to Objective-C → Swift bridging header.
+
 #### `_COMPILER_FRAMEWORK_SEARCH_PATHS`
 
 Framework search paths of Objective-C and Swift compilers.
 
-#### `_COMPILER_HEADER_SEARCH_PATHS`
+#### `_COMPILER_OBJC_HEADER_SEARCH_PATHS`
 
 Header search paths of Objective-C compiler.
 
-#### `_COMPILER_LINKED_LIBRARIES`
+#### `_COMPILER_OBJC_LINKER_FLAGS`
 
-Additionally linked libraries by Objective-C compiler.
+Additional flags passed to Objective-C linker.
+
+You may use this variable to link your target to libraries, such as `-lxml2`.
