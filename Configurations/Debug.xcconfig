@@ -9,8 +9,8 @@
 
 // MARK: Environment
 
-// Set debug environment.
-_ENVIRONMENT = DEBUG
+// Set debug environments.
+_ENVIRONMENTS = ENV_DEBUG
 
 // MARK: Architecture
 

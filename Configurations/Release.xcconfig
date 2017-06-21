@@ -9,8 +9,8 @@
 
 // MARK: Environment
 
-// Set release environment.
-_ENVIRONMENT = RELEASE
+// Set release environments.
+_ENVIRONMENTS = ENV_RELEASE
 
 // MARK: Architecture
 

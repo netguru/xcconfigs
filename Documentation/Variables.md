@@ -8,16 +8,16 @@ This document describes all public variables that you can override in your own `
 
 ### Environment
 
-#### `_ENVIRONMENT`
+#### `_ENVIRONMENTS`
 
-Name of the environment. As this variable is mapped to compilation conditions, you may use it to write conditionally compiled code.
+Environments to be used by compiler. As this variable is mapped to compilation conditions, you may use it to write conditionally compiled code.
 
 Assuming you have a follofing `*.xcconfig` file:
 
 ```none
 // Staging.xcconfig
 
-_ENVIRONMENT = STAGING
+_ENVIRONMENTS = ENV_STAGING
 ```
 
 You can use this in both Swift and Objective-C code:
@@ -38,7 +38,7 @@ You can use this in both Swift and Objective-C code:
 #endif
 ```
 
-Please note that when `_ENVIRONMENT` is mapped to a compilation condition, an `ENV_` prefix is applies so that the setting does not interfere with preexisting compilation conditions.
+You may have more than one environment set up.
 
 ---
 

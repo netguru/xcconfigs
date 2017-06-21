@@ -9,9 +9,9 @@
 
 // MARK: Environment
 
-// The environment build setting, typically overridden in environment-specific
+// The environments build setting, typically overridden in environment-specific
 // `xcconfig` files.
-_ENVIRONMENT = DEFAULT
+_ENVIRONMENTS = ENV_DEFAULT
 
 // MARK: Versioning
 

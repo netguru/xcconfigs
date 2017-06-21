@@ -74,7 +74,7 @@ ENABLE_NS_ASSERTIONS = YES
 ENABLE_STRICT_OBJC_MSGSEND = YES
 
 // Preprocessor definitions, mapped from `_ENVIRONMENT`.
-GCC_PREPROCESSOR_DEFINITIONS = ENV_$(_ENVIRONMENT)=1 $(inherited)
+GCC_PREPROCESSOR_DEFINITIONS = $(_ENVIRONMENTS) $(inherited)
 
 // Use GNU++11 C++ language standard.
 CLANG_CXX_LANGUAGE_STANDARD = gnu++11
@@ -212,8 +212,8 @@ SWIFT_VERSION = $(_COMPILER_SWIFT_VERSION)
 // Treat warning as errors (a.k.a. hard mode).
 SWIFT_TREAT_WARNINGS_AS_ERRORS = $(_COMPILER_HARD_MODE)
 
-// Compilation conditions for Swift, mapped from `_ENVIRONMENT`.
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = ENV_$(_ENVIRONMENT) $(inherited)
+// Compilation conditions for Swift, mapped from `_ENVIRONMENTS`.
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(_ENVIRONMENTS) $(inherited)
 
 // Additional flags passed to Swift compiler.
 OTHER_SWIFT_FLAGS = $(inherited) $(_COMPILER_SWIFT_FLAGS)
