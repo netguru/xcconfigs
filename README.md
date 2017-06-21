@@ -8,7 +8,11 @@ This is a collection of common Xcode build configuration files.
 
 ## Requirements
 
-The latest stable version of `xcconfigs` is compatible with **Xcode 8.3** and **Swift 3.1** toolchain.
+The latest stable version of `xcconfigs` is compatible with **Xcode 8.3**.
+
+## Documentation
+
+Documentation, tutorials and how-to's are available in [Documentation](Documentation) folder.
 
 ## Installation
 
@@ -28,6 +32,16 @@ You may also install `xcconfigs` as a git submodule:
 git submodule add https://github.com/netguru/xcconfigs.git {path}
 git submodule update --init --recursive
 ```
+
+## Roadmap
+
+#### Version 0.3
+
+The main focus of this release will be fixing issues encountered when integrating version 0.2. Also, more documentation and examples are planned to be added as well.
+
+#### Version 0.4
+
+This release will focus on compatibility with Xcode 9 and Swift 4.
 
 ## About
 
