@@ -149,4 +149,4 @@ Everything should be configured properly by now. Test the configuration by build
 
 ![](Images/usage-build.gif)
 
-If not, sorry... :trollface:
+If not, sorry... :trollface: [Please open an issue](https://github.com/netguru/xcconfigs/issues/new).
