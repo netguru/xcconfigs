@@ -88,23 +88,41 @@ CLANG_ENABLE_MODULES = YES
 // Enable Objective-C ARC.
 CLANG_ENABLE_OBJC_ARC = YES
 
+// Warn about block capture autoreleasing.
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+
+// Warn about suspucious commas.
+CLANG_WARN_COMMA = YES
+
 // Warn about suspicious empty loop bodies.
 CLANG_WARN_EMPTY_BODY = YES
 
 // Warn when a function will recursively call itself on every code path.
 CLANG_WARN_INFINITE_RECURSION = YES
 
+// Warn about non-literal null conversion.
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+
 // Whether to warn on suspicious implicit conversions.
 CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES
 
+// Warn about strict prototypes.
+CLANG_WARN_STRICT_PROTOTYPES = YES
+
 // Warn about unreachable code.
 CLANG_WARN_UNREACHABLE_CODE = YES
+
+// Warn about range-based `for` loops in C++.
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
 
 // Warning about suspicious uses of `std::move`.
 CLANG_WARN_SUSPICIOUS_MOVE = YES
 
 // Warn when overriding deprecated Objective-C methods.
 CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
+
+// Warn about implicit Objective-C literal conversions.
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
 
 // Warn about direct accesses to the Objective-C `isa` pointer instead of using
 // the Objective-C runtime API.
