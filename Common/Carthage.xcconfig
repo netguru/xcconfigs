@@ -8,7 +8,7 @@
 //
 
 // Path to top-level Carthage directory.
-_CARTHAGE_PATH = $(SRCROOT)/Carthage
+_CARTHAGE_PATH = $(PROJECT_DIR)/Carthage
 
 // Path to platform-specific Carthage/Build directory.
 _CARTHAGE_BUILD_PATH[sdk=iphone*] = $(_CARTHAGE_PATH)/Build/iOS

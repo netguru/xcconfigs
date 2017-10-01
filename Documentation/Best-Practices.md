@@ -82,13 +82,13 @@ Additionally, try to inherit defult build settings by putting `$(inherited)` as 
 In other words, **prefer this**:
 
 ```none
-_COMPILER_FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/Custom/Path/To/Frameworks
+_COMPILER_FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Custom/Path/To/Frameworks
 ```
 
 Instead of this:
 
 ```none
-FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/Custom/Path/To/Frameworks
+FRAMEWORK_SEARCH_PATHS = $(PROJECT_DIR)/Custom/Path/To/Frameworks
 ```
 
 _Rationale: [netguru/xcconfigs](https://github.com/netguru/xcconfigs) uses some reasonable default values for many build settings and some of them are even composed out of many variables._

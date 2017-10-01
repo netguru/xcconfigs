@@ -103,7 +103,7 @@ _DEPLOYMENT_TARGET_IOS = 8.0
 #include "../Carthage/Checkouts/xcconfigs/Targets/Application.xcconfig"
 
 _BUNDLE_IDENTIFIER = com.example.foo
-_BUNDLE_INFOPLIST_PATH = $(SRCROOT)/Path/To/Application-Info.plist
+_BUNDLE_INFOPLIST_PATH = $(PROJECT_DIR)/Path/To/Application-Info.plist
 ```
 
 ```none
@@ -113,7 +113,7 @@ _BUNDLE_INFOPLIST_PATH = $(SRCROOT)/Path/To/Application-Info.plist
 #include "../Carthage/Checkouts/xcconfigs/Targets/Tests.xcconfig"
 
 _BUNDLE_IDENTIFIER = com.example.foo.tests
-_BUNDLE_INFOPLIST_PATH = $(SRCROOT)/Path/To/Tests-Info.plist
+_BUNDLE_INFOPLIST_PATH = $(PROJECT_DIR)/Path/To/Tests-Info.plist
 ```
 
 For more information on build setting variables, see [Variables.md](Variables.md).

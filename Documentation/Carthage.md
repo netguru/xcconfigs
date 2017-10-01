@@ -18,13 +18,13 @@ In your `Base.xcconfig`, include `Carthage.xcconfig` file:
 
 By importing this file, you now have access to `_CARTHAGE_BUILD_PATH` build setting variable that is automatically used in `FRAMEWORK_SEARCH_PATHS` and that you can use in `carthage copy-frameworks` build phase.
 
-Note that by default [netguru/xcconfigs](https://github.com/netguru/xcconfigs) assumes that `Carthage` directory is in `$(SRCROOT)/Carthage`. If you need to customize that, override `_CARTHAGE_PATH` in your `Base.xcconfig`:
+Note that by default [netguru/xcconfigs](https://github.com/netguru/xcconfigs) assumes that `Carthage` directory is in `$(PROJECT_DIR)/Carthage`. If you need to customize that, override `_CARTHAGE_PATH` in your `Base.xcconfig`:
 
 ```none
 // Base.xcconfig
 
 #include "path/to/xcconfigs/Common/Carthge.xcconfig"
-_CARTHAGE_PATH = $(SRCROOT)/Custom/Path/To/Carthage
+_CARTHAGE_PATH = $(PROJECT_DIR)/Custom/Path/To/Carthage
 ```
 
 ### Step 2: Use \_CARTHAGE_BUILD_PATH in copy-frameworks build phase
