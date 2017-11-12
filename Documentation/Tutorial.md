@@ -86,14 +86,14 @@ _DEPLOYMENT_TARGET_IOS = 8.0
 // Debug.xcconfig
 
 #include "Base.xcconfig"
-#include "../Carthage/Checkouts/xcconfigs/Configuration/Debug.xcconfig"
+#include "../Carthage/Checkouts/xcconfigs/Configurations/Debug.xcconfig"
 ```
 
 ```none
 // Release.xcconfig
 
 #include "Base.xcconfig"
-#include "../Carthage/Checkouts/xcconfigs/Configuration/Release.xcconfig"
+#include "../Carthage/Checkouts/xcconfigs/Configurations/Release.xcconfig"
 ```
 
 ```none
