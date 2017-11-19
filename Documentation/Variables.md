@@ -114,6 +114,10 @@ Targeted device families on watchOS. `4` means Apple Watch and is the only valid
 
 ### Code signing
 
+#### `_CODESIGN_STYLE`
+
+Code signing style. Can be either `Automatic` or `Manual`, case-sensitive.
+
 #### `_CODESIGN_DEVELOPMENT_TEAM`
 
 Development team used along with `_CODESIGN_IDENTITY` and `_CODESIGN_PROFILE_SPECIFIER` to manually code sign the product.

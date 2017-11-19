@@ -60,6 +60,9 @@ _DEPLOYMENT_DEVICES_WATCHOS = 4
 
 // MARK: Signing
 
+// Code signign style.
+_CODESIGN_STYLE = Automatic
+
 // Development team to be used with `_CODESIGN_PROFILE_SPECIFIER` to manually
 // code sign the product.
 _CODESIGN_DEVELOPMENT_TEAM =
