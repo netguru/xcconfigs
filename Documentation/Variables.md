@@ -86,6 +86,10 @@ Whether the product bundle is `@testable`.
 
 Minimum deployment target of the product on iOS.
 
+#### `_DEPLOYMENT_DEVICES_IOS`
+
+Targeted device families on iOS. `1` means iPhone and `2` means iPad.
+
 #### `_DEPLOYMENT_TARGET_MACOS`
 
 Minimum deployment target of the product on macOS.
@@ -94,9 +98,17 @@ Minimum deployment target of the product on macOS.
 
 Minimum deployment target of the product on tvOS.
 
+#### `_DEPLOYMENT_DEVICES_TVOS`
+
+Targeted device families on tvOS. `3` means Apple TV and is the only valid value.
+
 #### `_DEPLOYMENT_TARGET_WATCHOS`
 
 Minimum deployment target of the product on watchOS.
+
+#### `_DEPLOYMENT_DEVICES_WATCHOS`
+
+Targeted device families on watchOS. `4` means Apple Watch and is the only valid value.
 
 ---
 

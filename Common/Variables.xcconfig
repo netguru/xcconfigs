@@ -40,14 +40,23 @@ _BUNDLE_TESTABLE = YES
 // Minimum iOS deployment target.
 _DEPLOYMENT_TARGET_IOS =
 
+// Targeted device families on iOS.
+_DEPLOYMENT_DEVICES_IOS = 1,2
+
 // Minimum macOS deployment target.
 _DEPLOYMENT_TARGET_MACOS =
 
 // Minimum tvOS deployment target.
 _DEPLOYMENT_TARGET_TVOS =
 
+// Targeted device families on tvOS.
+_DEPLOYMENT_DEVICES_TVOS = 3
+
 // Minimum watchOS deployment target.
 _DEPLOYMENT_TARGET_WATCHOS =
+
+// Targeted device families on watchOS.
+_DEPLOYMENT_DEVICES_WATCHOS = 4
 
 // MARK: Signing
 
