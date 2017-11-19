@@ -31,6 +31,7 @@ In `Application.xcconfig` and `Tests.xcconfig` map `_CODESIGN_*` build settings 
 ```none
 // Application.xcconfig
 
+_CODESIGN_STYLE = Manual
 _CODESIGN_DEVELOPMENT_TEAM = $(__APPLICATION_CODESIGN_DEVELOPMENT_TEAM)
 _CODESIGN_IDENTITY = $(__APPLICATION_CODESIGN_IDENTITY)
 _CODESIGN_PROFILE_SPECIFIER = $(__APPLICATION_CODESIGN_PROFILE_SPECIFIER)
@@ -89,6 +90,7 @@ In such case, you can directly set `_CODESIGN_*` build settings in `Application-
 ```none
 // Application-Staging.xcconfig
 
+_CODESIGN_STYLE = Manual
 _CODESIGN_DEVELOPMENT_TEAM = A1B2C3D4E5F6
 _CODESIGN_IDENTITY = John Doe (A1B2C3D4E5F6)
 _CODESIGN_PROFILE_SPECIFIER = MyProject Staging
@@ -97,6 +99,7 @@ _CODESIGN_PROFILE_SPECIFIER = MyProject Staging
 ```none
 // Application-Release.xcconfig
 
+_CODESIGN_STYLE = Manual
 _CODESIGN_DEVELOPMENT_TEAM = F6E5D4C3B2A1
 _CODESIGN_IDENTITY = Jane Roe (F6E5D4C3B2A1)
 _CODESIGN_PROFILE_SPECIFIER = MyProject Release

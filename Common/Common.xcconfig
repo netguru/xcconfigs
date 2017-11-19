@@ -51,7 +51,7 @@ PRODUCT_NAME = $(_BUNDLE_NAME)
 // MARK: Signing
 
 // Code signing style.
-CODE_SIGN_STYLE = $(_CODE_SIGN_STYLE)
+CODE_SIGN_STYLE = $(_CODESIGN_STYLE)
 
 // Development team to use for code signing.
 DEVELOPMENT_TEAM = $(_CODESIGN_DEVELOPMENT_TEAM)
