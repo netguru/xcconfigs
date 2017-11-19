@@ -1,6 +1,6 @@
 # xcconfigs
 
-![](https://img.shields.io/badge/xcode-8.3-green.svg)
+![](https://img.shields.io/badge/xcode-9.1-green.svg)
 [![](https://img.shields.io/github/release/netguru/xcconfigs.svg)](https://github.com/netguru/xcconfigs/releases)
 [![](https://img.shields.io/github/license/netguru/xcconfigs.svg)](LICENSE.md)
 
@@ -8,7 +8,7 @@ This is a collection of common Xcode build configuration files.
 
 ## Requirements
 
-The latest stable version of `xcconfigs` is compatible with **Xcode 8.3**.
+The latest stable version of `xcconfigs` is compatible with **Xcode 9.1**.
 
 ## Documentation
 
@@ -35,13 +35,13 @@ git submodule update --init --recursive
 
 ## Roadmap
 
-#### Version 0.4
+#### Version 0.5
 
-The main focus of this release will be fixing issues encountered when integrating version 0.3. Also, more documentation and examples will be added.
+The main focus of this release will be fixing issues encountered when integrating version 0.4.
 
 ## About
 
-This project is made and maintained with <3 by [Netguru](https://netguru.co).
+This project is made and maintained with ♡ by [Netguru](https://netguru.co).
 
 ### License
 
