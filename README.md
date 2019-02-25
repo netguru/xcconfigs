@@ -41,7 +41,7 @@ The main focus of this release will be fixing issues encountered when integratin
 
 ## About
 
-This project is made and maintained with ♡ by [Netguru](https://netguru.co).
+This project is made and maintained with ♡ by [Adrian Kashivskyy](https://github.com/akashivskyy) at [Netguru](https://netguru.co).
 
 ### License
 
