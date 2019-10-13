@@ -1,6 +1,6 @@
 # xcconfigs
 
-![](https://img.shields.io/badge/xcode-10.0-green.svg)
+![](https://img.shields.io/badge/xcode-11.1-green.svg)
 [![](https://img.shields.io/github/release/netguru/xcconfigs.svg)](https://github.com/netguru/xcconfigs/releases)
 [![](https://img.shields.io/github/license/netguru/xcconfigs.svg)](LICENSE.md)
 
@@ -8,7 +8,7 @@ This is a collection of common Xcode build configuration files.
 
 ## Requirements
 
-The latest stable version of `xcconfigs` is compatible with **Xcode 10.0**.
+The latest stable version of `xcconfigs` is compatible with **Xcode 11.1**.
 
 ## Documentation
 
@@ -41,7 +41,7 @@ The main focus of this release will be fixing issues encountered when integratin
 
 ## About
 
-This project is made and maintained with ♡ by [Adrian Kashivskyy](https://github.com/akashivskyy) at [Netguru](https://netguru.co).
+This project is made with ♡ by [Netguru](https://netguru.com) and maintained by [Adrian Kashivskyy](https://twitter.com/akashivskyy).
 
 ### License
 
