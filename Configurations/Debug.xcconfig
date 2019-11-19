@@ -51,5 +51,8 @@ ASSETCATALOG_COMPILER_OPTIMIZATION = time
 
 // MARK: Swift compiler
 
+// Disable whole-module compilation for Swift.
+SWIFT_COMPILATION_MODE = singlefile
+
 // Disable optimizations for Swift.
 SWIFT_OPTIMIZATION_LEVEL = -Onone
